@@ -1,3 +1,6 @@
+### What is this
+- My old assembly code
+- Here is the first code I wrote to understand how to write in Asm
 ### Build and launch
 1. `sudo apt install fasm&&sudo apt install qemu-system-x86 qemu-utils`
 2. `fasm name.asm name.bin`
@@ -23,6 +26,7 @@ times 510-($-$$)db 0
 dw 0xAA55
 ```
 ```asm
+;Pixel grid (this is where I learned to think through cycles and arithmetic)
 use16
 org 0x7C00
 mov ax,0x0013
@@ -66,6 +70,7 @@ times 510-($-$$) db 0
 dw 0xAA55
 ```
 ```asm
+;Optimizing horizontal lines across words
 use16
 org 0x7C00
 mov ax,0x0013
@@ -96,10 +101,10 @@ yo:
 push cx
 mov di,bx
 imul di,320
-mov cx,160
+mov cx,160;Edit: optimization allows you to do things 2 times faster
 yi:
-mov[es:di],ax
-add di,2
+mov[es:di],ax;Edit: I'm now 2 pixels at a time
+add di,2;Edit: we write two pixels at once, so we advance the pointer by two bytes each step
 loop yi
 pop cx
 add bx,20
@@ -109,6 +114,7 @@ times 510-($-$$) db 0
 dw 0xAA55
 ```
 ```asm
+;The "0" character from the VGA ROM (font 10h, but I get the bitmaps and shit at 13h)
 use16
 org 0x7C00
 mov ax,0x0013
