@@ -172,7 +172,4 @@ dw 0xAA55
 + BIOS		legacy	
 ! UEFI		pending	
 ```
-
-
-
 ![](https://raw.githubusercontent.com/TheUserAssembler2024/Assembler/main/shit/0.svg)
