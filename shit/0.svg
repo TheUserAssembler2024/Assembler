@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="360" height="64">
-<rect x="16" y="12" width="112" height="16" fill="#f00" opacity="0.5"/>
-<rect x="16" y="28" width="112" height="16" fill="#f80" opacity="0.5"/>
-<rect x="16" y="44" width="112" height="16" fill="#0f0" opacity="0.5"/>
-<rect x="16" y="60" width="112" height="16" fill="#f80" opacity="0.5"/>
-<text x="20" y="24" fill="#fff" font-family="monospace" font-size="12">Windows	skip</text>
-<text x="20" y="40" fill="#fff" font-family="monospace" font-size="12">Linux		maybe</text>
-<text x="20" y="56" fill="#fff" font-family="monospace" font-size="12">BIOS			legacy</text>
-<text x="20" y="72" fill="#fff" font-family="monospace" font-size="12">UEFI			pending</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="328" height="64" viewBox="0 0 328 64">
+<rect x="0" y="0" width="112" height="16" fill="#f00" opacity="0.5"/>
+<rect x="0" y="16" width="112" height="16" fill="#f80" opacity="0.5"/>
+<rect x="0" y="32" width="112" height="16" fill="#0f0" opacity="0.5"/>
+<rect x="0" y="48" width="112" height="16" fill="#f80" opacity="0.5"/>
+<text x="4" y="12" fill="#fff" font-family="monospace" font-size="12">Windows   skip</text>
+<text x="4" y="28" fill="#fff" font-family="monospace" font-size="12">Linux     maybe</text>
+<text x="4" y="44" fill="#fff" font-family="monospace" font-size="12">BIOS      legacy</text>
+<text x="4" y="60" fill="#fff" font-family="monospace" font-size="12">UEFI      pending</text>
 </svg>
